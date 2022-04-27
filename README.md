@@ -1,13 +1,28 @@
-# Network telemetry technological stack comparison:
-The collection of telemetry data is carried out by different vendors in the same way and with _same_ computer programs:
-|vendor		  |encoding                      |data model                    |protocol                           |subscription protocol           |       
-|-----------|------------------------------|------------------------------|-----------------------------------|--------------------------------|
-|open-souce	|xml<br>json<br>protobuf<br>gpb|yang                          |gprc(gnmi)<br>netconf<br>restconf  |netconf<br>openconfig rpc       |
-|cisco    	|gpb=protobufs,json            |yang (openconfig)             |grpc,udp, http                     |netconf<br>cli                  |
-|arista    	|gpb=protobufs                 |yang (openconfig)             |gprc(gnmi)<br>netconf              |netconf<br>cli                  |
-|juniper   	|gpb=protobufs                 |yang (openconfig)             |grpc<br>udp                        |netconf<br>cli<br>openconfig rpc|
-|huawei   	|gpb=protobufs                 |yang (openconfig)<br>json<xml>|grpc<br>udp                        |netconf<br>cli                  |
+# Network telemetry
+Network telemetry software consists of two major components:
+<li> Agents, which are installed on network switches, routers & firewalls and are used to communicate/send data to centralized analytics service
+<li> Telemetry analytics service, which consists of queuing/load-balancing software, noSQL database, analytics software, visualization frameworks 
+
+### Agents (or data collectors)
+The collection of telemetry data from switches, routers and firewalls is done by so called agents. Agent is a collection of software, which does the following things:
+<li> Gather data from network devices using data model (configuration file a.k.a. device config)
+<li> Squizze and encode data
+<li> Send data to centralized analytics server using transport protocol
+<li> Receive commands (subscribe to data etc..) from centralized analytics server 
+  
+Agents are implemented by different vendors in the same way. Here is the comparison of telemetry agents:
+|vendor		  |encoding                      |data model       |transport protocol           |subscription protocol        |       
+|-----------|------------------------------|-----------------|-----------------------------|-----------------------------|
+|open-souce	|xml<br>json<br>protobuf<br>gpb|yang             |gprc<br>netconf<br>restconf  |netconf<br>openconfig        |
+|cisco    	|protobufs<br>json             |yang             |grpc<br>udp<br>http          |netconf<br>cli               |
+|arista    	|protobufs                     |yang             |gprc<br>netconf              |netconf<br>cli               |
+|juniper   	|protobufs                     |yang             |grpc<br>udp                  |netconf<br>cli<br>openconfig |
+|huawei   	|protobufs                     |yang<br>json<xml>|grpc<br>udp                  |netconf<br>cli               |
+  
 Well-known open source data collectors are Telegraf, Fluentd, and Logstash.
+
+### Telemetry analytics service
+Telemetry data in large infrastrcuture is a lot of data, for example 1-3Tb per day.
 
 Telemetric data processing is carried out by different vendors in the same way, but using _different_ computer programs.
 |vendor		  |key-value database	(data lake)                              |queuing system  |analytics pipeline	    |visualization                 |               
