@@ -26,13 +26,13 @@ Well-known open source data collectors are Telegraf, Fluentd, and Logstash.
 Telemetry data in large infrastrcuture is a lot of data, for example 1-3Tb per day. Software developers, who works with Big Data ecosystem is familiar with data analytics pipeline, which can process several terabytes of data per day. 
 Network vendors fork open-source software and pack it into their telemetry brand products. Here is the comparison:
   
-|vendor		        |brand                      |NoSQL                              |queuing system  |analytics pipeline	  |visualization              |               
-|-----------------|---------------------------|-----------------------------------|----------------|----------------------|---------------------------|
-|micrisoft (SONiC)|no final product           |redis                              |none?           |none?                 |none                       |
-|cisco			      |DNA Center, Nexus Dashboard|elastic search<br>postgres<br>redis<br>prometheus<br>influx|kafka  			   |                      |graphana                   |
-|arista			      |cloud vision               |hbase	                            |kafka 		       |                      |                           |                         
-|juniper		      |junos telemetry interface  |influx   	                        |none? 			     |none?                 |juniper graphana           |                        
-|huawei 		      |iMaster                    |druid<br>hdfs                      |kafka   	       |spark                 |proprietary Fabric Insight |
+|vendor		        |brand                        |NoSQL                              |queuing system  |analytics pipeline	  |visualization              |               
+|-----------------|-----------------------------|-----------------------------------|----------------|----------------------|---------------------------|
+|micrisoft (SONiC)|no final product             |redis                              |none?           |none?                 |none                       |
+|cisco			      |DNA Center<br>Nexus Dashboard|elastic search<br>postgres<br>redis<br>prometheus<br>influx|kafka  			   |                      |graphana                   |
+|arista			      |cloud vision                 |hbase	                            |kafka 		       |                      |                           |                         
+|juniper		      |junos telemetry interface    |influx   	                        |none? 			     |none?                 |juniper graphana           |                        
+|huawei 		      |iMaster                      |druid<br>hdfs                      |kafka   	       |spark                 |proprietary Fabric Insight |
 
 
 We are also seeing many new open source projects related to streaming telemetry, such as:
