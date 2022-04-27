@@ -22,10 +22,10 @@ Agents are implemented by different vendors in the same way. Here is the compari
 Well-known open source data collectors are Telegraf, Fluentd, and Logstash.
 
 ### Telemetry analytics service
-Telemetry data in large infrastrcuture is a lot of data, for example 1-3Tb per day.
-
-Telemetric data processing is carried out by different vendors in the same way, but using _different_ computer programs.
-|vendor		  |key-value database	(data lake)                              |queuing system  |analytics pipeline	    |visualization                 |               
+Telemetry data in large infrastrcuture is a lot of data, for example 1-3Tb per day. Software developers, who works with Big Data ecosystem is familiar with data analytics pipeline, which can process several terabytes of data per day. 
+Network vendors fork open-source sofrware to build their telemetry products. Here is the comparison:
+  
+|vendor		  |NoSQL                                                       |queuing system  |analytics pipeline	    |visualization                 |               
 |-----------|------------------------------------------------------------|----------------|-----------------------|------------------------------|
 |open-souce	|hbase<br>cassanda<br>kudu<br>prometheus<br>druid<br>influxdb|kafka<br>MQ		  |Spark<br>Storm<br>Heron|Kibana<br>Graphana            |
 |cisco			|elastic search<br>postgres<br>redis                         |kafka  			    |CloudVision Turbines	  |Cisco DNA Center, DCNM        |
