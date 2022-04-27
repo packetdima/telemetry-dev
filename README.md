@@ -29,7 +29,7 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |vendor		        |brand                        |NoSQL                              |queuing system  |analytics pipeline	  |visualization              |               
 |-----------------|-----------------------------|-----------------------------------|----------------|----------------------|---------------------------|
 |micrisoft (SONiC)|no final product             |redis                              |none?           |none?                 |none                       |
-|cisco			      |DNA Center<br>Nexus Dashboard|elastic search<br>postgres<br>redis<br>prometheus<br>influx|kafka  			   |                      |graphana                   |
+|cisco			      |DNA center<br>nexus dashboard|elastic search<br>postgres<br>redis<br>prometheus<br>influx|kafka  			   |                      |graphana                   |
 |arista			      |cloud vision                 |hbase	                            |kafka 		       |                      |                           |                         
 |juniper		      |junos telemetry interface    |influx   	                        |none? 			     |none?                 |juniper graphana           |                        
 |huawei 		      |iMaster                      |druid<br>hdfs                      |kafka   	       |spark                 |proprietary Fabric Insight |
