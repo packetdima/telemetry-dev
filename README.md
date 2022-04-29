@@ -20,7 +20,7 @@ Agents are implemented by different vendors in the same way. Here is the compari
 |huawei   	     |protobufs<br>json             |yang<br>json<xml>|grpc<br>udp                  |grpc<br>netconf<br>cli       |
 
 ### Telemetry analytics service
-Telemetry data in large infrastrcuture is a lot of data, for example 1-3Tb per day. Software developers, who works with Big Data ecosystem is familiar with data analytics pipeline, which can process several terabytes of data per day. 
+Telemetry data in large infrastrcuture could be 1-5 Tb per day. Software developers, who works with Big Data ecosystem is familiar with data analytics pipeline, which can process several terabytes of data per day. 
 Network vendors fork open-source software and pack it into their telemetry brand products. Here is the comparison:
   
 |vendor		        |brand                        |NoSQL                              |queuing system  |analytics pipeline	  |visualization              |               
