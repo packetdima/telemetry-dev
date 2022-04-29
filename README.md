@@ -11,13 +11,13 @@ The collection of telemetry data from switches, routers and firewalls is done by
 <li> Receive commands (subscribe to data etc..) from centralized analytics server 
   
 Agents are implemented by different vendors in the same way. Here is the comparison of telemetry agents:
-|vendor		       |encoding                      |data model       |transport protocol           |subscription protocol        |       
-|----------------|------------------------------|-----------------|-----------------------------|-----------------------------|
-|microsoft(SONiC)|protobufs<br>json             |yang             |grpc                         |grpc                         |
-|cisco    	     |protobufs<br>json             |yang             |grpc<br>udp<br>http          |netconf<br>cli               |
-|arista    	     |protobufs<br>json             |yang             |gprc<br>netconf              |netconf<br>cli               |
-|juniper   	     |protobufs<br>json             |yang             |grpc<br>udp                  |netconf<br>cli               |
-|huawei   	     |protobufs<br>json             |yang<br>json<xml>|grpc<br>IPFIX<br>udp         |grpc<br>netconf<br>cli       |
+|vendor		       |encoding                      |data model       |transport protocol<br>dial-out<br>push|subscription protocol<br>dial-in<br>pull|       
+|----------------|------------------------------|-----------------|--------------------------------------|----------------------------------------|
+|microsoft(SONiC)|protobufs<br>json             |yang             |grpc                                  |grpc                                    |
+|cisco    	     |protobufs<br>json             |yang             |grpc<br>udp<br>http                   |netconf<br>cli                          |
+|arista    	     |protobufs<br>json             |yang             |gprc<br>netconf                       |netconf<br>cli                          |
+|juniper   	     |protobufs<br>json             |yang             |grpc<br>udp                           |netconf<br>cli                          |
+|huawei   	     |protobufs<br>json             |yang<br>json<xml>|grpc<br>IPFIX<br>udp                  |grpc<br>netconf<br>cli                  |
 
 ### Telemetry analytics service
 Telemetry data in large infrastrcuture could be 1-5 Tb per day.
@@ -26,13 +26,13 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |vendor		        |brand                        |NoSQL                              |queuing system  |analytics pipeline	  |dashboards                 |               
 |-----------------|-----------------------------|-----------------------------------|----------------|----------------------|---------------------------|
 |micrisoft (SONiC)|no final product             |redis                              |none?           |none?                 |none?                      |
-|cisco			      |DNA center<br>nexus dashboard|elastic search<br>postgres<br>redis<br>prometheus<br>influx|kafka  			   |                      |graphana <br>kibana                  |
+|cisco			      |DNA center<br>nexus dashboard<br>tetration|openTSDB<br>elastic search<br>postgres<br>redis<br>prometheus<br>influx|kafka  			   |                      |graphana <br>kibana                  |
 |arista			      |cloud vision                 |hbase	                            |kafka 		       |                      |                           |                         
 |juniper		      |junos telemetry interface    |influx   	                        |none? 			     |none?                 |juniper graphana           |                        
 |huawei 		      |iMaster                      |druid<br>hdfs                      |kafka   	       |spark                 |proprietary Fabric Insight |
 
 ### Popular open-source software for network telemetry
-<li> Time-series databases: cassandra, counchDB, elastic search, influxDB, MongoDB, Promotheus, RRDTool, TimescaleDB.
+<li> Time-series databases: cassandra, counchDB, elastic search, influxDB, MongoDB, Promotheus, RRDTool, TimescaleDB, OpenTSDB.
 <li> Dashboard: graphana, kibana, chronograf
 <li> Data collectors are Telegraf, Fluentd, and Logstash.
 
