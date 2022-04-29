@@ -17,7 +17,7 @@ Agents are implemented by different vendors in the same way. Here is the compari
 |cisco    	     |protobufs<br>json             |yang             |grpc<br>udp<br>http          |netconf<br>cli               |
 |arista    	     |protobufs<br>json             |yang             |gprc<br>netconf              |netconf<br>cli               |
 |juniper   	     |protobufs<br>json             |yang             |grpc<br>udp                  |netconf<br>cli               |
-|huawei   	     |protobufs<br>json             |yang<br>json<xml>|grpc<br>udp                  |netconf<br>cli               |
+|huawei   	     |protobufs<br>json             |yang<br>json<xml>|grpc<br>udp                  |grpc<br>netconf<br>cli       |
   
 Well-known open source data collectors are Telegraf, Fluentd, and Logstash.
 
@@ -33,6 +33,8 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |juniper		      |junos telemetry interface    |influx   	                        |none? 			     |none?                 |juniper graphana           |                        
 |huawei 		      |iMaster                      |druid<br>hdfs                      |kafka   	       |spark                 |proprietary Fabric Insight |
 
+Presently popular open-source time-series databases: cassandra, counchDB, elastic search, influxDB, MongoDB, Promotheus, RRDTool, TimescaleDB.
+Presently popular open-source dashboard: graphana, kibana, chronograf
 
 We are also seeing many new open source projects related to streaming telemetry, such as:
 Pipeline (backed by Cisco)
