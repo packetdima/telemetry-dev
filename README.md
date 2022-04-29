@@ -18,8 +18,6 @@ Agents are implemented by different vendors in the same way. Here is the compari
 |arista    	     |protobufs<br>json             |yang             |gprc<br>netconf              |netconf<br>cli               |
 |juniper   	     |protobufs<br>json             |yang             |grpc<br>udp                  |netconf<br>cli               |
 |huawei   	     |protobufs<br>json             |yang<br>json<xml>|grpc<br>udp                  |grpc<br>netconf<br>cli       |
-  
-Well-known open source data collectors are Telegraf, Fluentd, and Logstash.
 
 ### Telemetry analytics service
 Telemetry data in large infrastrcuture is a lot of data, for example 1-3Tb per day. Software developers, who works with Big Data ecosystem is familiar with data analytics pipeline, which can process several terabytes of data per day. 
@@ -33,10 +31,8 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |juniper		      |junos telemetry interface    |influx   	                        |none? 			     |none?                 |juniper graphana           |                        
 |huawei 		      |iMaster                      |druid<br>hdfs                      |kafka   	       |spark                 |proprietary Fabric Insight |
 
-Presently popular open-source time-series databases: cassandra, counchDB, elastic search, influxDB, MongoDB, Promotheus, RRDTool, TimescaleDB.
-Presently popular open-source dashboard: graphana, kibana, chronograf
+<li> Presently popular open-source time-series databases: cassandra, counchDB, elastic search, influxDB, MongoDB, Promotheus, RRDTool, TimescaleDB.
+<li> Presently popular open-source dashboard: graphana, kibana, chronograf
+<li> Well-known open source data collectors are Telegraf, Fluentd, and Logstash.
 
-We are also seeing many new open source projects related to streaming telemetry, such as:
-Pipeline (backed by Cisco)
-OpenNTI (backed by Juniper)
-GoArista (backed by Arista)
+<li> We are also seeing many new open source projects related to streaming telemetry, such as: Pipeline (backed by Cisco), OpenNTI (backed by Juniper), GoArista (backed by Arista)
