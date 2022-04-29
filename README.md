@@ -11,7 +11,7 @@ The collection of telemetry data from switches, routers and firewalls is done by
 <li> Receive commands (subscribe to data etc..) from centralized analytics server 
   
 Agents are implemented by different vendors in the same way. Here is the comparison of telemetry agents:
-|vendor		       |encoding                      |data model       |transport protocol<br>dial-out<br>push|subscription protocol<br>dial-in<br>pull|       
+|vendor		       |encoding/encapsulation        |data model       |transport protocol<br>dial-out<br>push|subscription protocol<br>dial-in<br>pull|       
 |----------------|------------------------------|-----------------|--------------------------------------|----------------------------------------|
 |microsoft(SONiC)|protobufs<br>json             |yang             |grpc                                  |grpc                                    |
 |cisco    	     |protobufs<br>json             |yang             |grpc<br>udp<br>http                   |netconf<br>cli                          |
@@ -26,13 +26,14 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |vendor		        |brand                        |NoSQL                              |queuing system  |analytics pipeline	  |dashboards                 |               
 |-----------------|-----------------------------|-----------------------------------|----------------|----------------------|---------------------------|
 |micrisoft (SONiC)|no final product             |redis                              |none?           |none?                 |none?                      |
-|cisco			      |DNA center<br>nexus dashboard<br>tetration|openTSDB<br>elastic search<br>postgres<br>redis<br>prometheus<br>influx|kafka  			   |                      |graphana <br>kibana                  |
+|cisco			      |DNA center<br>nexus dashboard<br>tetration|openTSDB<br>elastic search<br>postgres<br>redis<br>prometheus<br>influx|kafka  			   |spark<br>flink                      |graphana <br>kibana                  |
 |arista			      |cloud vision                 |hbase	                            |kafka 		       |                      |                           |                         
 |juniper		      |junos telemetry interface    |influx   	                        |none? 			     |none?                 |juniper graphana           |                        
 |huawei 		      |iMaster                      |druid<br>hdfs                      |kafka   	       |spark                 |proprietary Fabric Insight |
 
 ### Popular open-source software for network telemetry
 <li> Time-series databases: cassandra, counchDB, elastic search, influxDB, MongoDB, Promotheus, RRDTool, TimescaleDB, OpenTSDB.
+<li> Analytics: spark, flink.
 <li> Dashboard: graphana, kibana, chronograf
 <li> Data collectors are Telegraf, Fluentd, and Logstash.
 
