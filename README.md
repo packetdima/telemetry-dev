@@ -17,7 +17,7 @@ Agents are implemented by different vendors in the same way. Here is the compari
 |cisco    	     |protobufs<br>json             |yang             |grpc<br>udp<br>http          |netconf<br>cli               |
 |arista    	     |protobufs<br>json             |yang             |gprc<br>netconf              |netconf<br>cli               |
 |juniper   	     |protobufs<br>json             |yang             |grpc<br>udp                  |netconf<br>cli               |
-|huawei   	     |protobufs<br>json             |yang<br>json<xml>|grpc<br>udp                  |grpc<br>netconf<br>cli       |
+|huawei   	     |protobufs<br>json             |yang<br>json<xml>|grpc<br>IPFIX<br>udp         |grpc<br>netconf<br>cli       |
 
 ### Telemetry analytics service
 Telemetry data in large infrastrcuture could be 1-5 Tb per day.
