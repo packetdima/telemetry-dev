@@ -20,10 +20,10 @@ Agents are implemented by different vendors in the same way. Here is the compari
 |huawei   	     |protobufs<br>json             |yang<br>json<xml>|grpc<br>udp                  |grpc<br>netconf<br>cli       |
 
 ### Telemetry analytics service
-Telemetry data in large infrastrcuture could be 1-5 Tb per day. Software developers, who works with Big Data ecosystem is familiar with data analytics pipeline, which can process several terabytes of data per day. 
+Telemetry data in large infrastrcuture could be 1-5 Tb per day.
 Network vendors fork open-source software and pack it into their telemetry brand products. Here is the comparison:
   
-|vendor		        |brand                        |NoSQL                              |queuing system  |analytics pipeline	  |visualization              |               
+|vendor		        |brand                        |NoSQL                              |queuing system  |analytics pipeline	  |dashboards                 |               
 |-----------------|-----------------------------|-----------------------------------|----------------|----------------------|---------------------------|
 |micrisoft (SONiC)|no final product             |redis                              |none?           |none?                 |none?                      |
 |cisco			      |DNA center<br>nexus dashboard|elastic search<br>postgres<br>redis<br>prometheus<br>influx|kafka  			   |                      |graphana <br>kibana                  |
@@ -31,8 +31,9 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |juniper		      |junos telemetry interface    |influx   	                        |none? 			     |none?                 |juniper graphana           |                        
 |huawei 		      |iMaster                      |druid<br>hdfs                      |kafka   	       |spark                 |proprietary Fabric Insight |
 
-<li> Presently popular open-source time-series databases: cassandra, counchDB, elastic search, influxDB, MongoDB, Promotheus, RRDTool, TimescaleDB.
-<li> Presently popular open-source dashboard: graphana, kibana, chronograf
-<li> Well-known open source data collectors are Telegraf, Fluentd, and Logstash.
+### Popular open-source software for network telemetry
+<li> Time-series databases: cassandra, counchDB, elastic search, influxDB, MongoDB, Promotheus, RRDTool, TimescaleDB.
+<li> Dashboard: graphana, kibana, chronograf
+<li> Data collectors are Telegraf, Fluentd, and Logstash.
 
 <li> We are also seeing many new open source projects related to streaming telemetry, such as: Pipeline (backed by Cisco), OpenNTI (backed by Juniper), GoArista (backed by Arista)
