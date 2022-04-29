@@ -13,12 +13,11 @@ The collection of telemetry data from switches, routers and firewalls is done by
 Agents are implemented by different vendors in the same way. Here is the comparison of telemetry agents:
 |vendor		       |encoding                      |data model       |transport protocol           |subscription protocol        |       
 |----------------|------------------------------|-----------------|-----------------------------|-----------------------------|
-|open-souce	     |xml<br>json<br>protobuf<br>gpb|yang             |gprc<br>netconf<br>restconf  |netconf<br>openconfig        |
 |microsoft(SONiC)|protobufs<br>json             |yang             |grpc                         |grpc-server                  |
 |cisco    	     |protobufs<br>json             |yang             |grpc<br>udp<br>http          |netconf<br>cli               |
-|arista    	     |protobufs                     |yang             |gprc<br>netconf              |netconf<br>cli               |
+|arista    	     |protobufs<br>json             |yang             |gprc<br>netconf              |netconf<br>cli               |
 |juniper   	     |protobufs<br>json             |yang             |grpc<br>udp                  |netconf<br>cli               |
-|huawei   	     |protobufs                     |yang<br>json<xml>|grpc<br>udp                  |netconf<br>cli               |
+|huawei   	     |protobufs<br>json             |yang<br>json<xml>|grpc<br>udp                  |netconf<br>cli               |
   
 Well-known open source data collectors are Telegraf, Fluentd, and Logstash.
 
