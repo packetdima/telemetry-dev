@@ -13,7 +13,7 @@ The collection of telemetry data from switches, routers and firewalls is done by
 Agents are implemented by different vendors in the same way. Here is the comparison of telemetry agents:
 |vendor		       |encoding                      |data model       |transport protocol           |subscription protocol        |       
 |----------------|------------------------------|-----------------|-----------------------------|-----------------------------|
-|microsoft(SONiC)|protobufs<br>json             |yang             |grpc                         |grpc-server                  |
+|microsoft(SONiC)|protobufs<br>json             |yang             |grpc                         |grpc                         |
 |cisco    	     |protobufs<br>json             |yang             |grpc<br>udp<br>http          |netconf<br>cli               |
 |arista    	     |protobufs<br>json             |yang             |gprc<br>netconf              |netconf<br>cli               |
 |juniper   	     |protobufs<br>json             |yang             |grpc<br>udp                  |netconf<br>cli               |
@@ -27,7 +27,7 @@ Network vendors fork open-source software and pack it into their telemetry brand
   
 |vendor		        |brand                        |NoSQL                              |queuing system  |analytics pipeline	  |visualization              |               
 |-----------------|-----------------------------|-----------------------------------|----------------|----------------------|---------------------------|
-|micrisoft (SONiC)|no final product             |redis                              |none?           |none?                 |none                       |
+|micrisoft (SONiC)|no final product             |redis                              |none?           |none?                 |none?                      |
 |cisco			      |DNA center<br>nexus dashboard|elastic search<br>postgres<br>redis<br>prometheus<br>influx|kafka  			   |                      |graphana <br>kibana                  |
 |arista			      |cloud vision                 |hbase	                            |kafka 		       |                      |                           |                         
 |juniper		      |junos telemetry interface    |influx   	                        |none? 			     |none?                 |juniper graphana           |                        
