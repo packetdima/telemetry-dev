@@ -36,7 +36,7 @@ Network vendors fork open-source software and pack it into their telemetry brand
 <li> Other nosql databases used in telemetry: cassandra, counchDB, elastic search, mongoDB, hbase, redis, kudu, druid.
 <li> Analytics: spark, flink, kapacitor, storm, heron.
 <li> Queing: kafka, rabbitMQ, zeroMQ, activeMQ.
-<li> Dashboard: graphana, kibana, chronograf
-<li> Data collectors are Telegraf (Cisco IOS XR), Fluentd, and Logstash.
+<li> Dashboard: graphana, kibana, chronograf.
+<li> Data collectors: telegraf, fluentd, logstash.
 
 We are also seeing many new open source projects related to streaming telemetry, such as: Pipeline (backed by Cisco), OpenNTI (backed by Juniper), GoArista (backed by Arista)
