@@ -35,10 +35,10 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |function                               |software                                                                               |
 |---------------------------------------|---------------------------------------------------------------------------------------|
 |time-series databases                  |influxDB, kdb+, promotheus, RRDTool, timescaleDB, graphite, openTSDB, victoria metrics |
-|other nosql databases used in telemetry|cassandra, counchDB, elastic search, mongoDB, hbase, redis, kudu, druid                |
+|other databases used in telemetry      |cassandra, counchDB, elastic search, mongoDB, hbase, redis, kudu, druid                |
 |analytics                              |spark, flink, kapacitor, storm, heron                                                  |
 |queing                                 |kafka, rabbitMQ, zeroMQ, activeMQ                                                      |
 |dashboard                              |graphana, kibana, chronograf                                                           |
 |data collectors                        |telegraf, fluentd, logstash, metricbeat, logstash, collectd, statsd                    |
-
+  
 We are also seeing many new open source projects related to streaming telemetry, such as: Pipeline (backed by Cisco), OpenNTI (backed by Juniper), GoArista (backed by Arista)
