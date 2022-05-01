@@ -1,11 +1,9 @@
 # Network telemetry
-Network telemetry software consists of two major components:
-|telemetry component  |description|
-|---------------------|-----------|
-|data collectors      |sofware, which installed on network switches, routers & firewalls and are used to communicate/send data to centralized analytics service|
-|analytics            |telemetry analytics service, which consists of queuing/load-balancing software, noSQL database, analytics software, visualization frameworks| 
+Network telemetry software consists of two major components:<br>
+`Data collectors` is a software which installed on network switches, routers & firewalls and are used to communicate/send data to centralized analytics service<br>
+`Analytics engine` is a service, which consists of queuing/load-balancing software, noSQL database, analytics software, visualization frameworks. 
   
-Data collectors are implemented by different vendors in the same way. Here is the comparison of telemetry agents:
+`Data collectors` are implemented by different vendors in the same way. Here is the comparison:
 |vendor		       |encoding & encap          |data model          |dial-out<br>push<br>transport protocol|dial-in<br>pull<br>subscription protocol|       
 |----------------|--------------------------|--------------------|--------------------------------------|----------------------------------------|
 |microsoft(SONiC)|`protobufs` `json`        |`yang`              |`grpc`                                |`grpc`                                  |
@@ -15,16 +13,16 @@ Data collectors are implemented by different vendors in the same way. Here is th
 |huawei   	     |`protobufs` `json`        |`yang` `json` `xml` |`grpc` `IPFIX` `udp`                  |`grpc` `netconf` `cli`                  |
   
 ### Telemetry analytics service
-Telemetry data in large infrastrcuture could be 1-5 Tb per day.
+Telemetry data in large infrastrcuture could be `1-5 Tb per day.`
 Network vendors fork open-source software and pack it into their telemetry brand products. Here is the comparison:
   
-|vendor		        |brand                        |database                          |queuing         |analytics	  |dashboards                 |               
-|-----------------|-----------------------------|----------------------------------|----------------|-------------|---------------------------|
-|micrisoft (SONiC)|`none`             |`redis`                              |`none`           |none?                |`none`                      |
-|cisco			      |`DNA center` `nexus dashboard` `tetration`|`openTSDB` `elastic search` `postgres` `redis` `prometheus` `influx`|`kafka`  			   |`spark` `flink`                      |`graphana` `kibana`                  |
-|arista			      |`cloud vision`                 |`hbase`	                          |`kafka` 		       |                      |                           |                         
-|juniper		      |`junos telemetry interface`    |`influx`                          |`none`          |`kapacitor`             |`juniper graphana`           |                        
-|huawei 		      |`iMaster`                      |`druid` `hdfs`                   |`kafka`   	     |`spark`                 |`proprietary` |
+|vendor		        |brand                                      |database                  |queuing       |analytics	    |dashboards           |
+|-----------------|-------------------------------------------|--------------------------|--------------|---------------|---------------------|
+|micrisoft (SONiC)|`none`                                     |`redis` |`none`           |none?         |`none`         |                     |
+|cisco			      |`DNA center` `nexus dashboard` `tetration` |`?`                       |`kafka`  			|`spark` `flink`|`graphana` `kibana`  |
+|arista			      |`cloud vision`                             |`hbase`                   |`kafka` 		  |               |                     |                         
+|juniper		      |`junos telemetry interface`                |`influx`                  |`none`        |`kapacitor`    |`juniper graphana`   |                        
+|huawei 		      |`iMaster`                                  |`druid` `hdfs`            |`kafka`   	  |`spark`        |`proprietary`        |
 
 ### Popular open-source software for network telemetry  
 |function                 |software                                                                                       |
