@@ -32,8 +32,10 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |huawei 		      |iMaster                      |druid<br>hdfs                      |kafka   	       |spark                 |proprietary Fabric Insight |
 
 ### Popular open-source software for network telemetry
-<li> Time-series databases: cassandra, counchDB, elastic search, influxDB, MongoDB, Promotheus, RRDTool, TimescaleDB, OpenTSDB.
-<li> Analytics: spark, flink, kapacitor.
+<li> Time-series databases: influxDB, kdb+, promotheus, RRDTool, timescaleDB, graphite, openTSDB, victoria metrics.
+<li> Other nosql databases used in telemetry: cassandra, counchDB, elastic search, mongoDB, hbase, redis, kudu, druid.
+<li> Analytics: spark, flink, kapacitor, storm, heron.
+<li> Queing: kafka, rabbitMQ, zeroMQ, activeMQ.
 <li> Dashboard: graphana, kibana, chronograf
 <li> Data collectors are Telegraf (Cisco IOS XR), Fluentd, and Logstash.
 
