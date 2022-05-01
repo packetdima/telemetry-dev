@@ -11,7 +11,7 @@ The collection of telemetry data from switches, routers and firewalls is done by
 <li> Receive commands (subscribe to data etc..) from centralized analytics server 
   
 Agents are implemented by different vendors in the same way. Here is the comparison of telemetry agents:
-|vendor		       |encoding&encapsulation        |data model          |transport protocol<br>dial-out<br>push|subscription protocol<br>dial-in<br>pull|       
+|vendor		       |encoding & encap              |data model          |transport protocol<br>dial-out<br>push|subscription protocol<br>dial-in<br>pull|       
 |----------------|------------------------------|--------------------|--------------------------------------|----------------------------------------|
 |microsoft(SONiC)|protobufs<br>json             |yang                |grpc                                  |grpc                                    |
 |cisco    	     |protobufs<br>json             |yang<br>native<br>OC|grpc<br>udp<br>http                   |netconf<br>cli                          |
@@ -37,4 +37,4 @@ Network vendors fork open-source software and pack it into their telemetry brand
 <li> Dashboard: graphana, kibana, chronograf
 <li> Data collectors are Telegraf (Cisco IOS XR), Fluentd, and Logstash.
 
-<li> We are also seeing many new open source projects related to streaming telemetry, such as: Pipeline (backed by Cisco), OpenNTI (backed by Juniper), GoArista (backed by Arista)
+We are also seeing many new open source projects related to streaming telemetry, such as: Pipeline (backed by Cisco), OpenNTI (backed by Juniper), GoArista (backed by Arista)
