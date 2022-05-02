@@ -16,13 +16,15 @@ Network telemetry software consists of two major components:<br>
 Telemetry data in large infrastrcuture could be `1-5 Tb per day.`
 Network vendors fork open-source software and pack it into their telemetry brand products. Here is the comparison:
   
-|vendor		        |brand                                      |data lake                 |queuing       |analytics	    |dashboards           |
-|-----------------|-------------------------------------------|--------------------------|--------------|---------------|---------------------|
-|micrisoft (SONiC)|none                                       |`redis` |`none`           |`none`        |`none`         |`none                |
-|cisco			      |`DNA center` `nexus dashboard` `tetration` |`?`                       |`kafka`  			|`spark` `flink`|`graphana` `kibana`  |
-|arista			      |cloud vision`                              |`hbase`                   |`kafka` 		  |               |                     |                         
-|juniper		      |junos telemetry interface                  |`influx`                  |`none`        |`kapacitor`    |`juniper graphana`   |                        
-|huawei 		      |iMaster                                    |`druid` `hdfs`            |`kafka`   	  |`spark`        |`proprietary`        |
+|vendor		        |brand                                 |data lake                 |queuing          |analytics	    |dashboards           |
+|-----------------|--------------------------------------|--------------------------|-----------------|---------------|---------------------|
+|micrisoft (SONiC)|none                                  |`redis`                   |`none`           |`none`         |`none                |
+|cisco			      |tetration                             |`kafka`  			            |`?`              |`?`            |`?`                  |
+|cisco			      |nexus dashboard                       |`kafka`                   |`spark` `flink`  |`?`            |`graphana` `kibana`  |
+|cisco			      |DNA center                            |`influxdb`                |`?`  			      |`?`            |`?`                  |
+|arista			      |cloud vision                          |`hbase`                   |`kafka` 		      |               |                     |                         
+|juniper		      |junos telemetry interface             |`influx`                  |`none`           |`kapacitor`    |`juniper graphana`   |                        
+|huawei 		      |iMaster                               |`druid` `hdfs`            |`kafka`   	      |`spark`        |`proprietary`        |
 
 ### Popular open-source software for network telemetry  
 |function                 |software                                                                                       |
