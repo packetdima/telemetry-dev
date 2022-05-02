@@ -19,7 +19,7 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |vendor		        |brand                    |data lake                      |queuing   |analytics	     |dashboards         |
 |-----------------|-------------------------|-------------------------------|----------|---------------|-------------------|
 |micrisoft (SONiC)|none                     |`redis`                        |`none`    |`none`         |`none`             |
-|cisco			      |tetration                |`druid` `mongodb` `hdfs`       |`kafka`   |`?`        |`proprietary`      |
+|cisco			      |tetration                |`druid` `mongodb` `hdfs`       |`kafka`   |`spark`        |`proprietary`      |
 |cisco			      |nexus dashboard          |`?`                            |`kafka`   |`flink` `spark`|`proprietary`      |
 |cisco			      |DNA center               |`influxdb`                     |`kafka`   |`spark`        |`proprietary`      |
 |arista			      |cloud vision             |`hbase` `elastic search` `hdfs`|`kafka`   |`proprietary`  |`proprietary`      |                         
