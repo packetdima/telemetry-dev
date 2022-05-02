@@ -19,8 +19,8 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |vendor		        |brand                                 |data lake                 |queuing          |analytics	    |dashboards           |
 |-----------------|--------------------------------------|--------------------------|-----------------|---------------|---------------------|
 |micrisoft (SONiC)|none                                  |`redis`                   |`none`           |`none`         |`none                |
-|cisco			      |tetration                             |`kafka`  			            |`?`              |`?`            |`?`                  |
-|cisco			      |nexus dashboard                       |`kafka`                   |`spark` `flink`  |`?`            |`?`                  |
+|cisco			      |tetration                             |`?`  			                |`kafka`          |`?`            |`?`                  |
+|cisco			      |nexus dashboard                       |`?`                       |`kafka`          |`flink` `spark`|`?`                  |
 |cisco			      |DNA center                            |`influxdb`                |`kafka`  		    |`spark`        |`?`                  |
 |arista			      |cloud vision                          |`hbase`                   |`kafka` 		      |               |                     |                         
 |juniper		      |junos telemetry interface             |`influx`                  |`none`           |`kapacitor`    |`juniper graphana`   |                        
