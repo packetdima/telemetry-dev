@@ -23,7 +23,7 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |cisco			      |nexus dashboard          |`elastic search`               |`kafka`   |`flink` `spark`|`proprietary`      |
 |cisco			      |DNA center               |`influxdb`                     |`kafka`   |`spark`        |`proprietary`      |
 |arista			      |cloud vision             |`hbase` `elastic search` `hdfs`|`kafka`   |`proprietary`  |`proprietary`      |                         
-|juniper		      |jti mon t                |`prometheous` `influx`         |`kafka`   |`none`         |`none`             |                        
+|juniper		      |jti mon                  |`prometheous` `influx`         |`kafka`   |`none`         |`none`             |                        
 |huawei 		      |iMaster                  |`druid` `hdfs`                 |`kafka`   |`spark`        |`proprietary`      |
 
 ### Popular open-source software for network telemetry  
