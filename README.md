@@ -9,7 +9,7 @@ Network telemetry software consists of two major components:<br>
 |microsoft(SONiC)|`protobufs` `json`        |`yang`              |`grpc`                                |`grpc`                                  |
 |cisco    	     |`protobufs` `json`        |`yang` `native` `OC`|`grpc` `udp`                          |`netconf` `cli`                         |
 |arista    	     |`protobufs` `json`        |`yang`              |`gprc` `netconf`                      |`netconf` `cli`                         |
-|juniper   	     |`protobufs` `json`        |`yang`              |`grpc` `udp`                          |`netconf` `cli`                         |
+|juniper   	     |`protobufs` `json` `avro` |`yang`              |`grpc` `udp`                          |`netconf` `cli`                         |
 |huawei   	     |`protobufs` `json`        |`yang` `json` `xml` |`grpc` `IPFIX` `udp`                  |`grpc` `netconf` `cli`                  |
   
 ### Telemetry analytics service
@@ -23,7 +23,7 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |cisco			      |nexus dashboard          |`elastic search`               |`kafka`   |`flink` `spark`|`proprietary`      |
 |cisco			      |DNA center               |`influxdb`                     |`kafka`   |`spark`        |`proprietary`      |
 |arista			      |cloud vision             |`hbase` `elastic search` `hdfs`|`kafka`   |`proprietary`  |`proprietary`      |                         
-|juniper		      |junos telemetry interface|`influx`                       |`none`    |`kapacitor`    |`juniper graphana` |                        
+|juniper		      |jti mon t                |`prometheous` `influx`         |`kafka`   |`none`         |`none`             |                        
 |huawei 		      |iMaster                  |`druid` `hdfs`                 |`kafka`   |`spark`        |`proprietary`      |
 
 ### Popular open-source software for network telemetry  
