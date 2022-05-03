@@ -16,19 +16,19 @@ Network telemetry software consists of two major components:<br>
 Telemetry data in large infrastrcuture could be `1-5 Tb per day.`
 Network vendors fork open-source software and pack it into their telemetry brand products. Here is the comparison:
   
-|vendor		        |brand                    |data lake                      |queuing   |analytics	     |dashboards         |
-|-----------------|-------------------------|-------------------------------|----------|---------------|-------------------|
-|micrisoft (SONiC)|none                     |`redis`                        |`none`    |`none`         |`none`             |
-|cisco			      |tetration                |`druid` `mongodb` `hdfs`       |`kafka`   |`spark`        |`proprietary`      |
-|cisco			      |nexus dashboard          |`elastic search`               |`kafka`   |`flink` `spark`|`proprietary`      |
-|cisco			      |DNA center               |`influxdb`                     |`kafka`   |`spark`        |`proprietary`      |
-|cisco			      |pipeline                 |`?`                            |`?`       |`?`            |`?`                |
-|arista			      |cloud vision             |`hbase` `elastic search` `hdfs`|`kafka`   |`proprietary`  |`proprietary`      |
-|arista			      |go arista                |`influx` `elastic search`      |`kafka`   |`?`            |`?`                |                         
-|juniper		      |jti mon                  |`prometheous` `influx`         |`kafka`   |`none`         |`none`             |
-|juniper		      |open NTI                 |`influx`                       |`?`       |`none`         |`grafana`          |
-|huawei 		      |iMaster                  |`druid` `hdfs`                 |`kafka`   |`spark`        |`proprietary`      |
-|huawei 		      |iMaster                  |`druid` `hdfs`                 |`kafka`   |`spark`        |`proprietary`      |
+|vendor		        |brand                    |data lake                              |queuing   |analytics	     |dashboards         |
+|-----------------|-------------------------|---------------------------------------|----------|---------------|-------------------|
+|micrisoft (SONiC)|none                     |`redis`                                |`none`    |`none`         |`none`             |
+|cisco			      |tetration                |`druid` `mongodb` `hdfs`               |`kafka`   |`spark`        |`proprietary`      |
+|cisco			      |nexus dashboard          |`elastic search`                       |`kafka`   |`flink` `spark`|`proprietary`      |
+|cisco			      |DNA center               |`influxdb`                             |`kafka`   |`spark`        |`proprietary`      |
+|cisco			      |pipeline                 |`influx` `elastic search` `prometheous`|`kafka`   |`?`            |`grafana`          |
+|arista			      |cloud vision             |`hbase` `elastic search` `hdfs`        |`kafka`   |`proprietary`  |`proprietary`      |
+|arista			      |go arista                |`influx` `elastic search`              |`kafka`   |`?`            |`?`                |                         
+|juniper		      |jti mon                  |`prometheous` `influx`                 |`kafka`   |`none`         |`none`             |
+|juniper		      |open NTI                 |`influx`                               |`?`       |`none`         |`grafana`          |
+|huawei 		      |iMaster                  |`druid` `hdfs`                         |`kafka`   |`spark`        |`proprietary`      |
+|huawei 		      |iMaster                  |`druid` `hdfs`                         |`kafka`   |`spark`        |`proprietary`      |
 
 We are also seeing many new open source projects related to streaming telemetry, such as: Pipeline (backed by Cisco), OpenNTI (backed by Juniper), GoArista (backed by Arista)
 
