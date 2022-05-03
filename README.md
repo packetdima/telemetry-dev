@@ -22,18 +22,23 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |cisco			      |tetration                |`druid` `mongodb` `hdfs`       |`kafka`   |`spark`        |`proprietary`      |
 |cisco			      |nexus dashboard          |`elastic search`               |`kafka`   |`flink` `spark`|`proprietary`      |
 |cisco			      |DNA center               |`influxdb`                     |`kafka`   |`spark`        |`proprietary`      |
-|arista			      |cloud vision             |`hbase` `elastic search` `hdfs`|`kafka`   |`proprietary`  |`proprietary`      |                         
-|juniper		      |jti mon                  |`prometheous` `influx`         |`kafka`   |`none`         |`none`             |                        
+|cisco			      |pipeline                 |`?`                            |`?`       |`?`            |`?`                |
+|arista			      |cloud vision             |`hbase` `elastic search` `hdfs`|`kafka`   |`proprietary`  |`proprietary`      |
+|arista			      |go arista                |`influx` `elastic search`      |`kafka`   |`?`            |`?`                |                         
+|juniper		      |jti mon                  |`prometheous` `influx`         |`kafka`   |`none`         |`none`             |
+|juniper		      |open NTI                 |`influx`                       |`?`       |`none`         |`grafana`          |
 |huawei 		      |iMaster                  |`druid` `hdfs`                 |`kafka`   |`spark`        |`proprietary`      |
+|huawei 		      |iMaster                  |`druid` `hdfs`                 |`kafka`   |`spark`        |`proprietary`      |
+We are also seeing many new open source projects related to streaming telemetry, such as: Pipeline (backed by Cisco), OpenNTI (backed by Juniper), GoArista (backed by Arista)
+
 
 ### Popular open-source software for network telemetry  
-|function                 |software                                                                                       |
-|-------------------------|-----------------------------------------------------------------------------------------------|
-|time-series databases    |`influxDB` `kdb+` `promotheus` `RRDTool` `timescaleDB` `graphite` `openTSDB` `victoria metrics`|
-|other databases used     |`cassandra` `counchDB` `elastic search` `mongoDB` `hbase` `redis` `kudu` `druid`               |
-|analytics                |`spark` `flink` `kapacitor` `storm` `heron`                                                    |
-|queing                   |`kafka` `rabbitMQ` `zeroMQ` `activeMQ`                                                         |
-|dashboard                |`graphana` `kibana` `chronograf`                                                               |
-|data collectors          |`telegraf` `fluentd` `logstash` `metricbeat` `logstash` `collectd` `statsd`                    |
+|function                 |software                                                                                                |
+|-------------------------|--------------------------------------------------------------------------------------------------------|
+|time-series databases    |`influxDB` `kdb+` `promotheus` `RRDTool` `timescaleDB` `graphite` `openTSDB` `victoria metrics` `warp10`|
+|other databases used     |`cassandra` `counchDB` `elastic search` `mongoDB` `hbase` `redis` `kudu` `druid`                        |
+|analytics                |`spark` `flink` `kapacitor` `storm` `heron`                                                             |
+|queing                   |`kafka` `rabbitMQ` `zeroMQ` `activeMQ`                                                                  |
+|dashboard                |`graphana` `kibana` `chronograf`                                                                        |
+|data collectors          |`telegraf` `fluentd` `logstash` `metricbeat` `logstash` `collectd` `statsd`                             |
   
-We are also seeing many new open source projects related to streaming telemetry, such as: Pipeline (backed by Cisco), OpenNTI (backed by Juniper), GoArista (backed by Arista)
