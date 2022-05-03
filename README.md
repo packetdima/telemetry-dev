@@ -29,6 +29,7 @@ Network vendors fork open-source software and pack it into their telemetry brand
 |juniper		      |open NTI                 |`influx`                       |`?`       |`none`         |`grafana`          |
 |huawei 		      |iMaster                  |`druid` `hdfs`                 |`kafka`   |`spark`        |`proprietary`      |
 |huawei 		      |iMaster                  |`druid` `hdfs`                 |`kafka`   |`spark`        |`proprietary`      |
+
 We are also seeing many new open source projects related to streaming telemetry, such as: Pipeline (backed by Cisco), OpenNTI (backed by Juniper), GoArista (backed by Arista)
 
 
