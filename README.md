@@ -56,6 +56,9 @@ We tested the following databases functionality (not performance) as telemetry d
 <li>victoria metrics<br> 
 (-) Shady project.
 <li>warp10<br>               
+<li>elastic search<br>
+(+) Good ecosystem. A lot of programmers who know the product.
+(-) Breaks when indices more than 50M entries.
 <li>postgers<br>
 (+) Every programmer knows Postgres.
 (-) No suitable for data analytics -- to slow to read data.
