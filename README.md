@@ -46,7 +46,7 @@ We are also seeing many new open source projects related to streaming telemetry,
 ### Database drawbacks
 We tested the following databases functionality (not performance) as telemetry data storage. Here are our findings:
 <li>influxDB<br>
-(+) Rich ecosystem with a lot of plugins like telegraf to collect data from network devices. Easy to install. Beautiful UI analogue to kibana & graphana. A lot of links and success stories in Internet. Queing is intergrated.
+(+) Rich ecosystem with a lot of plugins like telegraf to collect data from network devices. Easy to install. Beautiful UI analogue to kibana & graphana. A lot of links and success stories in Internet. Queing is intergrated.<br>
 (-) Replication/backup function is commerical. If you join two buckets, you get CPU 100% utilization. 
   
 <li>promotheus<br>
