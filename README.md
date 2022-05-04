@@ -42,4 +42,24 @@ We are also seeing many new open source projects related to streaming telemetry,
 |queing                   |`kafka` `rabbitMQ` `zeroMQ` `activeMQ`                                                                  |
 |dashboard                |`graphana` `kibana` `chronograf`                                                                        |
 |data collectors          |`telegraf` `fluentd` `logstash` `metricbeat` `logstash` `collectd` `statsd`                             |
+
+### Database drawbacks
+We tested the following databases functionality (not performance) as telemetry data storage. Here are our findings:
+<li>influxDB<br>
+(+) Rich ecosystem with a lot of plugins like telegraf to collect data from network devices. Easy to install. Beautiful UI analogue to kibana & graphana. A lot of links and success stories in Internet. Queing is intergrated.
+(-) Replication/backup function is commerical. If you join two buckets, you get CPU 100% utilization. 
+  
+<li>promotheus<br>
+(-) Can only work with pull data gathering model. If your network devices, which need to send telemtry, are located behind NAT, you need to install aditional proxy component.
+<li>openTSDB<br>
+(-) No ecosystem. Hard to install.
+<li>victoria metrics<br> 
+(-) Shady project.
+<li>warp10<br>               
+<li>postgers<br>
+(+) Every programmer knows Postgres.
+(-) No suitable for data analytics -- to slow to read data.
+
+
+
   
