@@ -33,14 +33,14 @@ We are also seeing many new open source projects related to streaming telemetry,
 
 
 ### Popular open-source software for network telemetry  
-|function                 |software                                                                                                |
-|-------------------------|--------------------------------------------------------------------------------------------------------|
-|time-series databases    |`influxDB` `kdb+` `promotheus` `RRDTool` `timescaleDB` `graphite` `openTSDB` `victoria metrics` `warp10`|
-|other databases used     |`cassandra` `counchDB` `elastic search` `mongoDB` `hbase` `redis` `kudu` `druid`                        |
-|analytics                |`spark` `flink` `kapacitor` `storm` `heron`                                                             |
-|queing                   |`kafka` `rabbitMQ` `zeroMQ` `activeMQ`                                                                  |
-|dashboard                |`graphana` `kibana` `chronograf`                                                                        |
-|data collectors          |`telegraf` `fluentd` `logstash` `metricbeat` `logstash` `collectd` `statsd`                             |
+|function                 |software                                                                                                       |
+|-------------------------|---------------------------------------------------------------------------------------------------------------|
+|time-series databases    |`influxDB` `kdb+` `promotheus` `RRDTool` `timescaleDB` `graphite` `openTSDB` `victoria metrics` `warp10`       |
+|other databases used     |`cassandra` `counchDB` `elastic search` `mongoDB` `hbase` `redis` `kudu` `druid`                               |
+|analytics                |`spark` `flink` `kapacitor` `storm` `heron`                                                                    |
+|queing                   |`kafka` `rabbitMQ` `zeroMQ` `activeMQ`                                                                         |
+|dashboard                |`graphana` `kibana` `chronograf`                                                                               |
+|data collectors          |`telegraf` `fluentd` `logstash` `metricbeat` `logstash` `collectd` `statsd` `beats` `promtail` `node exporter` |
 
 ### Database drawbacks
 We tested the following databases functionality (not performance) as telemetry data storage. Here are our findings:
