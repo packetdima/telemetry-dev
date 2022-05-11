@@ -42,7 +42,7 @@ We are also seeing many new open source projects related to streaming telemetry,
 |dashboard                |`graphana` `kibana` `chronograf`                                                                               |
 |data collectors          |`telegraf` `fluentd` `logstash` `metricbeat` `logstash` `collectd` `statsd` `beats` `promtail` `node-exporter` |
 
-### Database drawbacks
+### Databases for telemetry comparison
 We tested the following databases functionality (not performance) as telemetry data storage. Here are our findings:
 
 |database                 |remarks                                                                                                        |
