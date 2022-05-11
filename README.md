@@ -44,24 +44,12 @@ We are also seeing many new open source projects related to streaming telemetry,
 
 ### Database drawbacks
 We tested the following databases functionality (not performance) as telemetry data storage. Here are our findings:
-<li>influxDB<br>
-`A lot of plugins for data-collector (telegraf)` `Beautiful UI analogue to kibana & graphana` `Easy to install` `Many succcess stories' `Queing is integraded` <br>
-`Replication/backup function is not free` `Joining data is pain with CPU 100% utilization` 
-  
-<li>promotheus<br>
-(-) Can only work with pull data gathering model. If your network devices, which need to send telemtry, are located behind NAT, you need to install aditional proxy component.
-<li>openTSDB<br>
-(-) No ecosystem. Hard to install.
-<li>victoria metrics<br> 
-(-) Shady project.
-<li>warp10<br>               
-<li>elastic search<br>
-(+) Good ecosystem. A lot of programmers who know the product.
-(-) Breaks when indices more than 50M entries.
-<li>postgers<br>
-(+) Every programmer knows Postgres.
-(-) No suitable for data analytics -- to slow to read data.
 
-
-
-  
+|database                 |remarks                                                                                                        |
+|-------------------------|---------------------------------------------------------------------------------------------------------------|
+|influx    |`many plugins for telegraf` `beautiful UI analogue to kibana & graphana` `easy to install` `many succcess stories` `queing is integraded` `replication/backup function is not free` `joining data is pain with CPU 100% utilization`| 
+|promotheus|`works with pull data gathering model` `not suitable if  network devices are behind NAT` `need to install aditional push-server`| 
+|openTSDB|`no ecosystem` `hard to install`| 
+|victoria metrics|`no success stories` `political`| 
+|warp10|`has great UI` `has ecosystem`| 
+|elastic search|`has great ecosystem` `well-known product` `breaks when indices more than 50M entries` | 
